@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    --color-base: antiquewhite;
+    --color-textos-comunes: whitesmoke;
+    --color-especial: #ff7dd8;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Modificaciones Bootstrap*/
+
+.bg-antique{
+    background-color: var(--color-base);
+}
+
+.bg-bubblegum{
+    background-color: var(--color-especial);
+}
+
+.text-antique{
+    color: var(--color-base);
+}
+
+.border-dashed{
+    --bs-border-style: dashed;
+}
+
+.border-bubblegum{
+    --bs-border-color: var(--color-especial);
+}
+
+.rounded-r2{
+    --bs-border-radius: 2rem;
+}
+
+a img{
+    height: 3rem;
+}
+
+/*Cabecera y Footer*/
+.linkContacto{
+    color: white;
+    background-color: #ff7dd8;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 1rem;
+    transition: 1s ease;
+}
+
+.linkContacto:hover{
+    background-color: #4fa8fb;
+    transition: 1s ease;
+}
+
+.footerRedes{
+    font-size: 1.5rem;
+}
+
+.footerRedes a{
+    color:black;
+    text-decoration: none;
+}
+
+.footerNewsletterInput{
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+
+.footerNewsletterInput:focus{
+    outline: none;
+}
+
+.footerNewsletterInput::placeholder{
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.footerNewsletterBtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/*Banner*/
+
+.bannerTitulo{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.bannerParrafo{
+    color: black;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/*Inicio*/
+
+.comoTitulo{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+.comoItemParrafo{
+    text-align: justify;
+}
+
+.comoItemTitulo{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.comoItem{
+    height: 15rem;
+    width: 80%;
+    box-shadow: #ff7dd8 1rem 1rem 1px;
+}
+
+/*Objetivos*/
+
+.objetivosItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.objetivosItemTextos{
+    max-width: 50%;
+}
+
+.objetivosItemNumero{
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px dotted #ff7dd8;
+    color: #ff7dd8;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem 0 0 0;
+    border-radius: 1rem;
+}
+
+/*Afiliados*/
+
+.owl-carousel .img-fluid{
+    height: 15rem;
+}
+
+.owl-carousel .card{
+    width: 80%;
+}
+
+/*Animaciones*/
+.sub {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.sub:hover, .sub:focus {
+    background-size: 100% 2px;
+}
+
+/*Telefono*/
+@media screen and (max-width: 767px){
+
+    .comoItemTitulo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .comoItemParrafo{
+        display: none;
+    }
+
+    .objetivosItemTextos{
+        max-width: 65%;
+    }
+}   
