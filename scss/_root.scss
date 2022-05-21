@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vibur&display=swap");
+
+//Variables
+$color-base: #fdf6f0;
+$color-textos-comunes: #fdf6f0;
+$color-especial: #f5c6aa;
+$color-complementario: #f8e2cf;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: $color-base;
+}
+
+/*Modificaciones Bootstrap*/
+//NOTA: Las variables de bootstrap no se pueden sobreescribir con variables propias en este archivo D:
+
+.btn-especial {
+  --bs-btn-color: #212529;
+  --bs-btn-bg: #f8e2cf;
+  --bs-btn-border-color: #f5c6aa;
+  --bs-btn-hover-color: #fdf6f0;
+  --bs-btn-hover-bg: #f5c6aa;
+  --bs-btn-hover-border-color: #f8e2cf;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #1a1e21;
+  --bs-btn-active-border-color: #191c1f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #212529;
+  --bs-btn-disabled-border-color: #212529;
+}
+
+.bg-complementario {
+  background-color: $color-complementario;
+}
+
+.bg-antique {
+  background-color: $color-base;
+}
+
+.bg-bubblegum {
+  background-color: $color-especial;
+}
+
+.text-antique {
+  color: $color-base;
+}
+
+.text-especial {
+  color: $color-especial;
+}
+
+.text-complementario {
+  color: $color-complementario;
+}
+
+.border-dashed {
+  --bs-border-style: dashed;
+}
+
+.border-bubblegum {
+  --bs-border-color: #f5c6aa;
+}
+
+.rounded-r2 {
+  --bs-border-radius: 2rem;
+}
+
+a {
+  img {
+    height: 3rem;
+  }
+}

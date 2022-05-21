@@ -1,0 +1,27 @@
+/*OBJETIVO*/
+.objetivosItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  .objetivosItemNumero {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px dotted $color-especial;
+    color: $color-especial;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem 0 0 0;
+    border-radius: 1rem;
+  }
+  .objetivosItemTextos {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .objetivosItemTextos {
+    max-width: 65%;
+  }
+}

@@ -1,0 +1,12 @@
+/*HEADER*/
+.linkContacto {
+  color: white;
+  background-color: $color-especial;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 1rem;
+  transition: 1s ease;
+  &:hover {
+    background-color: $color-complementario;
+    transition: 1s ease;
+  }
+}
