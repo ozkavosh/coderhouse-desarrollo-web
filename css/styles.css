@@ -1,15 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    --color-base: antiquewhite;
-    --color-textos-comunes: whitesmoke;
-    --color-especial: #ff7dd8;
+    --color-base: #FDF6F0;
+    --color-textos-comunes: #FDF6F0;
+    --color-especial: #F5C6AA;
+    --color-complementario: #F8E2CF;
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: var(--color-base);
+}
+
 /*Modificaciones Bootstrap*/
+
+.btn-especial{
+    --bs-btn-color: #212529;
+    --bs-btn-bg: var(--color-complementario);
+    --bs-btn-border-color: var(--color-especial);
+    --bs-btn-hover-color: var(--color-textos-comunes);
+    --bs-btn-hover-bg: var(--color-especial);
+    --bs-btn-hover-border-color: #var(--color-complementario);
+    --bs-btn-focus-shadow-rgb: 66,70,73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1a1e21;
+    --bs-btn-active-border-color: #191c1f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+.bg-complementario{
+    background-color: var(--color-complementario)
+}
 
 .bg-antique{
     background-color: var(--color-base);
@@ -21,6 +48,14 @@
 
 .text-antique{
     color: var(--color-base);
+}
+
+.text-especial{
+    color: var(--color-especial);
+}
+
+.text-complementario{
+    color: var(--color-complementario);
 }
 
 .border-dashed{
@@ -42,14 +77,14 @@ a img{
 /*Cabecera y Footer*/
 .linkContacto{
     color: white;
-    background-color: #ff7dd8;
+    background-color: var(--color-especial);
     padding: 0.2rem 1rem 0.2rem 1rem;
     border-radius: 1rem;
     transition: 1s ease;
 }
 
 .linkContacto:hover{
-    background-color: #4fa8fb;
+    background-color: var(--color-complementario);
     transition: 1s ease;
 }
 
@@ -58,14 +93,14 @@ a img{
 }
 
 .footerRedes a{
-    color:black;
+    color: black;
     text-decoration: none;
 }
 
 .footerNewsletterInput{
     background: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-textos-comunes);
     width: 90%;
 }
 
@@ -86,13 +121,15 @@ a img{
 
 /*Banner*/
 
+.banner{
+    height: 100vh;
+}
+
 .bannerTitulo{
-    text-transform: uppercase;
     font-size: 4rem;
 }
 
 .bannerParrafo{
-    color: black;
     font-size: 1.2rem;
     text-align: justify;
 }
@@ -106,6 +143,7 @@ a img{
 
 .comoItemParrafo{
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .comoItemTitulo{
@@ -117,7 +155,13 @@ a img{
 .comoItem{
     height: 15rem;
     width: 80%;
-    box-shadow: #ff7dd8 1rem 1rem 1px;
+    box-shadow: var(--color-especial) 1rem 1rem 1px;
+}
+
+/*Nosotros*/
+
+.redesNosotros:hover{
+    color: var(--color-complementario);
 }
 
 /*Objetivos*/
@@ -137,8 +181,8 @@ a img{
 .objetivosItemNumero{
     font-size: 1.2rem;
     text-align: center;
-    border: 2px dotted #ff7dd8;
-    color: #ff7dd8;
+    border: 2px dotted var(--color-especial);
+    color: var(--color-especial);
     width: 2rem;
     height: 2rem;
     padding: 0.2rem 0 0 0;
@@ -153,19 +197,6 @@ a img{
 
 .owl-carousel .card{
     width: 80%;
-}
-
-/*Animaciones*/
-.sub {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.sub:hover, .sub:focus {
-    background-size: 100% 2px;
 }
 
 /*Telefono*/
