@@ -14,6 +14,16 @@ body {
   background-color: $color-base;
 }
 
+@mixin anchorNoDeco($color){
+  color: $color;
+  text-decoration: none;
+}
+
+.noBorderNoBg{
+  background: none;
+  border: none;
+}
+
 /*Modificaciones Bootstrap*/
 //NOTA: Las variables de bootstrap no se pueden sobreescribir con variables propias en este archivo D:
 

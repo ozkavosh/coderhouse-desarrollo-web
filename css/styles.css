@@ -6,6 +6,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fdf6f0; }
 
+.noBorderNoBg, .footerNewsletterInput, .footerNewsletterBtn {
+  background: none;
+  border: none; }
+
 /*Modificaciones Bootstrap*/
 .btn-especial {
   --bs-btn-color: #212529;
@@ -80,8 +84,6 @@ a img {
     text-decoration: none; }
 
 .footerNewsletterInput {
-  background: none;
-  border: none;
   border-bottom: 2px solid #fdf6f0;
   width: 90%; }
   .footerNewsletterInput:focus {
@@ -90,8 +92,6 @@ a img {
     color: rgba(0, 0, 0, 0.671); }
 
 .footerNewsletterBtn {
-  background: none;
-  border: none;
   cursor: pointer;
   font-size: 1.2rem; }
 

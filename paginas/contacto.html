@@ -104,39 +104,75 @@
         </div>
         <div class="row mb-3">
           <div class="col">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" />
+            <label for="nombre" class="form-label" name="labelNombre"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              aria-labeledby="labelNombre"
+            />
           </div>
 
           <div class="col">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" />
+            <label for="apellido" class="form-label" name="labelApellido"
+              >Apellido</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="apellido"
+              name="apellido"
+              aria-labeledby="labelApellido"
+            />
           </div>
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="novedades" />
-          <label class="form-check-label" for="novedades"
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="novedades"
+            aria-labelledby="labelNovedades"
+            name="novedades"
+          />
+          <label class="form-check-label" for="novedades" name="labelNovedades"
             >Quiero recibir novedades</label
           >
         </div>
-        <button type="submit" class="btn btn-especial">Enviar</button>
+        <button
+          type="submit"
+          class="btn btn-especial"
+          aria-label="Boton para enviar formulario"
+        >
+          Enviar
+        </button>
       </form>
     </section>
 
     <footer class="container-fluid bg-bubblegum p-5 mt-3">
       <div class="row">
         <div class="col-md-4 mb-2 mb-md-0">
-          <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo de Emprender" /></a>
+          <a href="../index.html"
+            ><img src="../assets/img/logo.png" alt="Logo de Emprender"
+          /></a>
           <p class="m-0 p-0">
             San Miguel de Tucumán, Argentina. 2022 Todos los derechos reservados
             &copy.
           </p>
           <div class="footerRedes">
-            <a href="../index.html"> <i class="fab fa-facebook-square"></i> </a>
+            <a href="../index.html" aria-label="Link a facebook">
+              <i class="fab fa-facebook-square"></i>
+            </a>
 
-            <a href="../index.html"> <i class="fab fa-instagram-square"></i> </a>
+            <a href="../index.html" aria-label="Link a facebook">
+              <i class="fab fa-instagram-square"></i>
+            </a>
 
-            <a href="../index.html"> <i class="fab fa-twitter-square"></i> </a>
+            <a href="../index.html" aria-label="Link a facebook">
+              <i class="fab fa-twitter-square"></i>
+            </a>
           </div>
         </div>
 
@@ -153,7 +189,11 @@
               placeholder="Ingresa tu correo"
               required
             />
-            <button type="submit" class="footerNewsletterBtn">
+            <button
+              type="submit"
+              class="footerNewsletterBtn"
+              aria-label="Boton de enviar newsletter"
+            >
               <i class="fas fa-arrow-right"></i>
             </button>
           </div>
