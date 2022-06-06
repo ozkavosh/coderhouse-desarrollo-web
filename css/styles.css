@@ -106,7 +106,6 @@ a img {
   box-shadow: #f5c6aa 1rem 1rem 1px; }
 
 .comoItemParrafo {
-  text-align: justify;
   font-size: 1.2rem; }
 
 .comoItemTitulo {
@@ -152,3 +151,6 @@ a img {
   width: 80%; }
 
 /*CONTACTO*/
+.form-check-input:checked {
+  background-color: #f5c6aa;
+  border-color: #f8e2cf; }

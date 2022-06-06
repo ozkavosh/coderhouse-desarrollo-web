@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -74,10 +74,7 @@
         <div class="col-12 col-md d-flex flex-column justify-content-center">
           <h1 class="bannerTitulo">Contacto</h1>
           <p class="bannerParrafo">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-            nostrum atque, quod asperiores laudantium minus doloribus quibusdam
-            dignissimos quas distinctio neque totam eaque iure obcaecati,
-            cupiditate id aperiam quisquam exercitationem.
+            ¿Te interesó la iniciativa? Dejá tus datos y nos estaremos contactando a la brevedad!
           </p>
         </div>
 
@@ -100,6 +97,7 @@
               class="form-control"
               id="correo"
               aria-describedby="correoHelp"
+              required
             />
             <div id="correoHelp" class="form-text">
               Nunca lo compartiremos con nadie.
@@ -111,7 +109,7 @@
             <label for="nombre" class="form-label" name="labelNombre"
               >Nombre</label
             >
-            <input type="text" class="form-control" id="nombre" name="nombre" />
+            <input type="text" class="form-control" id="nombre" name="nombre" required/>
           </div>
 
           <div class="col">
@@ -123,7 +121,19 @@
               class="form-control"
               id="apellido"
               name="apellido"
+              required
             />
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+          <div class="col">
+            <label for="correo" class="form-label">Pais</label>
+            <select class="form-select" aria-label="Default select example" id="pais" required aria-label="Seleccionar pais">
+              <option selected disabled>Seleccionar Pais</option>
+              <option value="1">Argentina</option>
+              <option value="2">Otros</option>
+            </select>
           </div>
         </div>
         <div class="mb-3 form-check">
