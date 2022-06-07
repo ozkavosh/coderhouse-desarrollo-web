@@ -85,7 +85,7 @@ a img {
 
 .footerNewsletterInput {
   border-bottom: 2px solid #fdf6f0;
-  width: 90%; }
+  width: 80%; }
   .footerNewsletterInput:focus {
     outline: none; }
   .footerNewsletterInput::placeholder {
