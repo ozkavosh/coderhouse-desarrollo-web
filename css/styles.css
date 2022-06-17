@@ -10,6 +10,16 @@ body {
   background: none;
   border: none; }
 
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #caa38c; }
+
+::-webkit-scrollbar-thumb {
+  background: #f8e2cf;
+  border-radius: 3rem; }
+
 /*Modificaciones Bootstrap*/
 .btn-especial {
   --bs-btn-color: #212529;
@@ -40,7 +50,7 @@ body {
   color: #fdf6f0; }
 
 .text-especial {
-  color: #f5c6aa; }
+  color: #caa38c; }
 
 .text-complementario {
   color: #f8e2cf; }
@@ -131,16 +141,33 @@ a img {
   gap: 1rem;
   margin-bottom: 2rem; }
   .objetivosItem .objetivosItemNumero {
+    position: relative;
     font-size: 1.2rem;
     text-align: center;
-    border: 2px dotted #f5c6aa;
-    color: #f5c6aa;
     width: 2rem;
     height: 2rem;
-    padding: 0.2rem 0 0 0;
-    border-radius: 1rem; }
+    padding: 0.2rem 0 0 0; }
+    .objetivosItem .objetivosItemNumero::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0.1rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      border: 2px dotted #caa38c;
+      animation-name: spin;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
   .objetivosItem .objetivosItemTextos {
     max-width: 50%; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 @media screen and (max-width: 767px) {
   .objetivosItemTextos {

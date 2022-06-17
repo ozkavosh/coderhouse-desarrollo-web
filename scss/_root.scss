@@ -5,6 +5,7 @@
 $color-base: #fdf6f0;
 $color-textos-comunes: #fdf6f0;
 $color-especial: #f5c6aa;
+$color-especial-2: #caa38c;
 $color-complementario: #f8e2cf;
 
 body {
@@ -22,6 +23,19 @@ body {
 .noBorderNoBg{
   background: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-especial-2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-complementario;
+  border-radius: 3rem;
 }
 
 /*Modificaciones Bootstrap*/
@@ -61,7 +75,7 @@ body {
 }
 
 .text-especial {
-  color: $color-especial;
+  color: $color-especial-2;
 }
 
 .text-complementario {

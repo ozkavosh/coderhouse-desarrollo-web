@@ -1,4 +1,17 @@
 /*OBJETIVO*/
+@mixin animacion($nombre, $duracion, $metodo, $veces){
+  animation-name: $nombre;
+  animation-duration: $duracion;
+  animation-timing-function: $metodo;
+  animation-iteration-count: $veces;
+}
+
+@mixin keyframes($nombre){
+  @keyframes #{$nombre}{
+    @content
+  }
+}
+
 .objetivosItem {
   display: flex;
   align-items: center;
@@ -6,17 +19,37 @@
   gap: 1rem;
   margin-bottom: 2rem;
   .objetivosItemNumero {
+    position: relative;
     font-size: 1.2rem;
     text-align: center;
-    border: 2px dotted $color-especial;
-    color: $color-especial;
     width: 2rem;
     height: 2rem;
     padding: 0.2rem 0 0 0;
-    border-radius: 1rem;
+    
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0.1rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      border: 2px dotted $color-especial-2;
+      @include animacion(spin, 2s, linear, infinite);
+    }
   }
+
   .objetivosItemTextos {
     max-width: 50%;
+  }
+}
+
+@include keyframes(spin){
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
 
