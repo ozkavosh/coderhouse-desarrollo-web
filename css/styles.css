@@ -104,6 +104,8 @@ a img {
 .footerNewsletterBtn {
   cursor: pointer;
   font-size: 1.2rem; }
+  .footerNewsletterBtn:hover {
+    color: white; }
 
 /*INICIO*/
 .comoTitulo {
@@ -176,6 +178,9 @@ a img {
 /*AFILIADOS*/
 .owl-carousel .card {
   width: 80%; }
+
+.testimonialCol {
+  height: 25rem; }
 
 /*CONTACTO*/
 .form-check-input:checked {

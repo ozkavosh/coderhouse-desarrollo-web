@@ -24,4 +24,7 @@ $footerInputMap: (width: 80%, border-bottom: 2px solid $color-textos-comunes, ou
   @extend .noBorderNoBg;
   cursor: pointer;
   font-size: 1.2rem;
+  &:hover{
+    color: white;
+  }
 }
