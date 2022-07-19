@@ -1,4 +1,4 @@
-# Proyecto Final Desarrollo Web Coderhouse Comisión 31645
+# Proyecto Final Desarrollo Web Coderhouse Comisión 29235
 
 Este es mi proyecto final del curso de Desarrollo Web de Coderhouse!
 Se trata de un proyecto para emprendedores que tengo pensado realizar de forma real en el futuro, aunque creo que lo cambiaria por una SPA con React, 
